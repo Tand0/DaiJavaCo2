@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="${project.name}">
+  <bannerLeft>
+    <name>${project.name}</name>
+    <src>./images/bannerImage.gif</src>
+    <href>http://park.ruru.ne.jp/ando/work/</href>
+  </bannerLeft>
+  <body>
+    <links>
+      <item name="${project.name}"
+            href="${project.url}"/>
+      <item name="Ando RandD"
+            href="http://park.ruru.ne.jp/ando/work/" />
+    </links>
+    <menu name="Download">
+      <item name="${project.name}-${version}.zip"
+            href="${project.name}-${version}.zip" />
+    </menu>
+    
+    <menu name="Source Code">
+      <item name="DaiJavaCo2 Source Code"
+            href="https://github.com/Tand0/DaiJavaCo2" />
+    </menu>
+    
+    <menu ref="modules" />
+    <menu ref="reports" />
+  </body>
+</project>

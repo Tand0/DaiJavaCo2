@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+
+	<properties>
+		<title>だいじゃばこ２</title>
+		<author>Toshikazu Ando.</author>
+	</properties>
+
+	<body>
+		<section name="だいじゃばこ２">
+			<p>安藤がてきとーにつくった戦略シミュレーションげーむ「だいじゃばこ」が、今「だいじゃばこ２」となって甦る。</p>
+			<p>Javaでやっぱりてきとーに作った戦略シミュレーションゲーム「だいじゃばこ２」。</p>
+			<p><s>Java8のstreamやらラムダ式やらの勉強用でもあります。</s></p>
+			<p>ふえる。たたかう。などといったてきとーなコマンド、そして今回、謝罪と賠償……。じゃなかった、要求などの追加コマンドを用意し、
+				いける地域も大阪だけではなく、いま話題のネタもふんだんに盛り込んだ問題作！
+			</p>
+			<subsection name="ダウンロード">
+				<p>
+					ダウンロードは左側からどうぞ。
+					<br />
+					Javaがインストールしてあればてきとーにrun.batを叩くか、
+					<br />
+					java -jar ＜＜ロードしたjarファイル＞＞
+					<br />
+					でいけると思います。
+				</p>
+				<p>
+					ソースはgitなんとかで公開予定
+				</p>
+			</subsection>
+			<subsection name="画面イメージ">
+
+				<table border="1">
+					<tr>
+						<th>初期画面</th>
+						<th>オープニング</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/start.png" alt="初期画面" width="100%" />
+							<br />
+							左上の＞を押すとイベントが進みます。
+						</td>
+						<td>
+							<img src="images/opening.png" alt="オープニング" width="100%" />
+							<br />
+							途中イベントも入ります。がんばれ副団長。
+							<br />
+							秘書艦はキミに決めた！
+						</td>
+					</tr>
+					<tr>
+						<th>国情報選択シーン</th>
+						<th>個人情報選択シーン</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/mapselect.png" alt="国情報選択シーン" width="100%" />
+							<br />
+							基本的には各個人の行動内容を割合で指定していくだけ。
+						</td>
+						<td>
+							<img src="images/personselect.png" alt="個人情報選択シーン" width="100%" />
+							<br />
+							コアなユーザーのために個人指定で細かな設定ができます。
+						</td>
+					</tr>
+					<tr>
+						<th>イベントシーン</th>
+						<th>むふふ…</th>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/event.png" alt="イベント" width="100%" />
+							<br />
+							史実に基づかない愉快なイベント盛だくさん
+						</td>
+						<td>
+							<img src="images/mufufu.png" alt="むふふシーン" width="100%" />
+							<br />
+							特定のイベントをクリアすると……
+						</td>
+					</tr>
+				</table>
+			</subsection>
+			<subsection name="謝辞／ライセンス">
+				<ul>
+					<li>
+						地図の考え方は以下を利用しました。
+						<br />
+						<ul>
+							<li>
+								<a href="http://crocro.com/html5/world_map/">ワールド マップ自動生成</a>
+							</li>
+							<li>
+								<a href="http://www.voidelement.com/randomap/">ランダムマップ</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						オペレータのなるみやさんはランサーズを使用しました。
+						<br />
+						<ul>
+							<li>
+								<a href="http://www.lancers.jp/">ランサーズ</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						なるみやさん以外のライセンスはGPLに準拠します。
+					</li>
+				</ul>
+			</subsection>
+		</section>
+	</body>
+</document>

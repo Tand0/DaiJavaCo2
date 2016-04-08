@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="MS932" standalone="yes"?>
+<root>
+	<sinario title="初期メッセージ" priority="0">
+		<if name="NOW" value="MAP_CREATE" />
+		<if name="1ST" />
+		<message>
+			なるみや「どうもこんばんわ。初めまして」
+			なるみや「私はこの薔薇騎士団所属、ゲームのナレーション役をつとめる『なるみや』です」
+			なるみや「ナレーションだから『なるみや』。分かりやすいでしょう？」
+			なるみや「それでは、まずは世界とか作っちゃいますのでしばらくお待ちくださいませ」
+			どぼどぼどー
+			………
+		</message>
+	</sinario>
+	<sinario title="MAP表示後" priority="0">
+		<if name="NOW" value="MAP_POST" />
+		<if name="1ST" />
+		<message>
+			………
+			なるみや「マップ作成が終わりました」
+			なるみや「これで次はいよいよ選択画面だよ」
+		</message>
+	</sinario>
+	<sinario title="自ターンの開始" priority="0">
+		<if name="NOW" value="SELECT_CONT_WAIT_PRE" />
+		<if name="1ST" />
+		<if name="CONT_PRI" />
+		<message>
+			なるみや「私たちのターンの開始が始まりましたね」
+			なるみや「このゲームではターンの開始にどの処理を実行するかを割合で決めます」
+			なるみや「その国の人たちはその指針に従ってランダムで動くわけです」
+			なるみや「では実際にやってみましょうか」
+			なるみや「終了ボタンを押すと自ターンが終了しますので、注意してくださいね」
+			なるみや「ここでは ＞ ボタンでは先に進みませんよ」
+		</message>
+	</sinario>
+	<sinario title="自ターンの開始その２" priority="0">
+		<if name="NOW" value="SELECT_CONT_WAIT_PRE" />
+		<if name="TURN" value="2" />
+		<if name="1ST" />
+		<if name="CONT_PRI" />
+		<message>
+			なるみや「どうですか？   分かります？」
+			なるみや「マップは自国フェーズのときは都市をクリックすると地域名とかだせますよ」
+			なるみや「地域を選択後にマップ下のチェックボックスを押してみてください」
+			なるみや「さらに地域は１地域だけならクリック後にドラッグで移動できますので」
+			なるみや「位置が重なっているときは都市を遷都しちゃってください」
+			なるみや「あ、そうそう。」
+			なるみや「人物情報はデータテーブルの「味方」をクリックするとでてきます」
+			なるみや「分かりにくくてごめんなさい」
+			なるみや「個別に行動を決めたいときはこちらから人物情報を出して」
+			なるみや「人情報ウィンドウから変更を行うこともできます」
+		</message>
+	</sinario>
+	<sinario title="自ターンの開始その３" priority="0">
+		<if name="NOW" value="SELECT_CONT_WAIT_PRE" />
+		<if name="TURN" value="3" />
+		<if name="1ST" />
+		<if name="CONT_PRI" />
+		<message>
+			なるみや「いちいち行動を指定することがめんどくさい貴方に！」
+			なるみや「先に進める ＞ ボタンのとなりにぐるぐるマークのボタンがありますね」
+			なるみや「これをクリックするとautoでターンを進めてくれるという機能もあります」
+			なるみや「めんどくさいこともこれで解消ですね」
+			なるみや「それから ＞ ボタンの隣にはスキップを行える ＞＞ ボタンもあります」
+			なるみや「これで各種処理が驚きの速さに！」
+			なるみや「やったね！」
+		</message>
+	</sinario>
+	<sinario title="行動フェーズ" priority="0">
+		<if name="NOW" value="MOVE_PRE" />
+		<if name="1ST" />
+		<message>
+			なるみや「国家の移動が終わりましたでこれから行動フェーズになります」
+			なるみや「キャラクターは民族性に従って先ほど選んだ選択肢の重みづけでランダムに行動を実行します」
+			なるみや「一体なにがおきるのでしょうか？？ 楽しみですね」
+		</message>
+	</sinario>
+	<sinario title="行動フェーズ後" priority="0">
+		<if name="NOW" value="MOVE_POST" />
+		<if name="1ST" />
+		<message>
+			なるみや「全員の移動が終わりました。また選択モードに戻りますね」
+		</message>
+	</sinario>
+	<sinario title="終戦" priority="0">
+		<if name="NOW" value="END_ONE" />
+		<if name="1ST" />
+		<message>
+			なるみや「国が１国になりました」
+			なるみや「世界が制服されてしまいましたのでこのゲームは終了になります」
+			なるみや「お疲れさまでした」
+		</message>
+	</sinario>
+	<sinario title="20ターン目" priority="0" img="src\main\config\imgnal/nal.png">
+		<if name="TURN" value="20" />
+		<if name="NOW" value="SELECT_CONT_PRE" />
+		<if name="1ST" />
+		<message>
+			なるみや「20ターン目になりました」
+			なるみや「どうでしょうか、操作には慣れてきましたか？」
+			なるみや「本当なら特定イベントクリアでアドベンチャーゲームのように画面いっぱいに女の子の裸とか」
+			なるみや「でてきちゃったりしたら良いかな。とかおもったのだけれど、」
+			なるみや「そんなことはありませんからね！」
+			なるみや「え？　テキストで声だけでもー」
+			なるみや「あぁーん(棒)」
+			なるみや「いやーん(棒)」
+			なるみや「はは……。私に演技力を期待したらダメですってば」
+		</message>
+	</sinario>
+	<sinario title="50ターン目" priority="0" img="src\main\config\imgnal/nal.png">
+		<if name="TURN" value="50" />
+		<if name="NOW" value="SELECT_CONT_PRE" />
+		<if name="1ST" />
+		<message>
+			なるみや「50ターン目になりましたね」
+			なるみや「終わるまであと少しです」
+			なるみや「………」
+			なるみや「………」
+			なるみや「………」
+			なるみや「たぶん」
+			なるみや「頑張りましょう」
+		</message>
+	</sinario>
+	<sinario title="敗戦" priority="0">
+		<if name="NOW" value="END_GAME_OVER" />
+		<if name="1ST" />
+		<message>
+			なるみや「あらら、担当している国家に人が誰もいなくなってしまいましたね」
+			なるみや「この場合はゲームオーバーになります」
+			なるみや「お疲れさまでした」
+		</message>
+	</sinario>
+
+	<contry title="アーカンソー" priority="0" gobi="ですわ">
+		<selection name="NT" value="0" />
+		<selection name="HK" value="1" />
+		<selection name="FT" value="1" />
+		<selection name="RA" value="1" />
+		<selection name="AD" value="3" />
+		<selection name="HN" value="1" />
+		<selection name="SL" value="1" />
+		<person title="なるみや" priority="0" img="src/main/config/imgone/nal.jpg" str="10" >
+			<sinario title="自分の手番" priority="0">
+				<message>
+					%a「わーぃ。私の手番%b」
+				</message>
+			</sinario>
+		</person>
+		<person title="七日野ようこ" img="src/main/config/imgone/PaintBBS0507230112_s.png" str="20" />
+		<person title="オーカ・スターシーノ" />
+		<person title="サクラ・サバッキーノ" />
+		<person title="女騎士エル・エルブズ" />
+		<person title="女騎士カーラ・ナポリターノ" />
+		<person title="女騎士メール・ギャロップ" />
+		<person title="女騎士ヒラリー・ヴェネチアーノ団長" />
+		<person title="女騎士シノ" />
+		<person title="女騎士シルバーナ" />
+		<person title="暁の灰銀騎士" />
+		<person title="第一王女ヒメノ・アーカンソー" />
+		<person title="国王ウォーク・アーカンソー" />
+		<person title="第１女騎士のみなさん(近接型)" />
+		<person title="第２女騎士のみなさん(遠隔型)" />
+		<person title="第３女騎士のみなさん(魔法型)" />
+		<person title="第４女騎士のみなさん(くのいち)" />
+		<person title="ゴブリンの女の子" />
+		<person title="オーが―の集団" />
+		<person title="市民のみなさん" />
+		<person title="冒険者ギルドの長" />
+		<person title="冒険者ギルドの受付" />
+	</contry>
+	<contry title="お隣の国" priority="1" gobi="ニダ">
+		<selection name="NT" value="1" />
+		<selection name="HK" value="1" />
+		<selection name="FT" value="1" />
+		<selection name="RA" value="1" />
+		<selection name="AD" value="1" />
+		<selection name="HN" value="3" />
+		<selection name="SB" value="3" />
+		<selection name="HN" value="2" />
+		<selection name="HG" value="3" />
+		<selection name="SL" value="3" />
+		<sinario title="お隣のー" priority="0">
+			<if name="NOW" value="SELECT_CONT_POST" />
+			<if name="1ST" />
+			<message>
+				なるみや「なんだろう。モデルについては極秘事項です！」
+			</message>
+		</sinario>
+		<sinario title="謝罪と賠償を要求する" priority="2">
+			<if name="1ST" />
+			<if name="SELECT" value="SB" />
+			<message>
+				%a「謝罪と賠償を要求する%b」
+			</message>
+			<sinario title="謝罪１" priority="３">
+				<if name="1ST" />
+				<if name="SELECT" value="SB" />
+				<message>
+					%a「まだ謝罪が足りない%b」
+				</message>
+				<sinario title="謝罪２" priority="３">
+					<if name="1ST" />
+					<if name="SELECT" value="SB" />
+					<message>
+						%a「まだまだ謝罪が足りない%b」
+					</message>
+				</sinario>
+			</sinario>
+		</sinario>
+		<sinario title="資源外交する" priority="2">
+			<if name="SELECT" value="HN" />
+			<message>
+				%a「資源外交する%b」
+			</message>
+		</sinario>
+		<person title="コロ・サレーノ男爵" priority="0" />
+		<person title="貴族ビル・ヴェネチアーノ" />
+		<person title="オツ・さ～ん"  img="src/main/config/imgone/003.jpg" />
+		<person title="オージ・サーマキーノ"  img="src/main/config/imgone/004.jpg" />
+		<person title="老騎士(オージ様のブレーン)"  img="src/main/config/imgone/005.jpg" />
+		<person title="ユリグラント男爵" img="src/main/config/imgone/006.jpg" />
+		<person title="視線の４８" img="src/main/config/imgone/007.jpg" />
+	</contry>
+	<contry title="ルーピー鯖" priority="1" gobi="ですサー">
+		<selection name="NK" value="1" />
+		<selection name="FT" value="1" />
+		<selection name="HN" value="1" />
+		<selection name="AD" value="3" />
+		<sinario title="ルーピー・サーバでのイベント" priority="0">
+			<if name="NOW" value="SELECT_CONT_POST" />
+			<if name="1ST" />
+			<message>
+				なるみや「ちょっと長い名前のお国にですねー」
+				なるみや「でも中身の人たちは俺TUEEE-というか」
+				なるみや「鷹派の人たちが多いようですよ」
+				なるみや「本当なのかしら？」
+			</message>
+		</sinario>
+		<person title="滝川ケン" priority="0" />
+		<person title="七日野アジア" />
+		<person title="ジア・スルターナ" />
+		<person title="メイドのリナ" />
+		<person title="ネーム・ゲイード" />
+		<person title="アリーナ・フェアリー" />
+		<person title="ケイン・スラッシュ" />
+		<person title="最強の吸血鬼" />
+		<person title="アカハ・アーカード" />
+		<person title="亡国の狙撃兵" />
+		<person title="アイル・シーサイト" />
+		<person title="花鱗の女騎士" />
+		<person title="ムサシ・フラワー" />
+		<person title="剣劇の盗麗人" />
+		<person title="エキトー・オーザキ" />
+		<person title="濡焔の大魔術" />
+		<person title="オオミヤ・イズミー" />
+		<person title="遊撃の大提督" />
+		<person title="十傑の生産主" />
+		<person title="オゥーィ・ジュージョー" />
+		<person title="癒の継続戦闘" />
+		<person title="ウ・キーマ・フナワタリ" />
+		<person title="安心の黄色" />
+		<person title="カーレ・イタシーバァ" img="src/main/config/imgone/001.jpg" />
+	</contry>
+	<contry title="オーストロシア" priority="1" gobi="ろしあー">
+		<selection name="AD" value="10" />
+		<selection name="HN" value="3" />
+		<selection name="SL" value="3" />
+		<sinario title="オーストロシア初期メッセージ" priority="0">
+			<if name="NOW" value="SELECT_CONT_POST" />
+			<if name="1ST" />
+			<message>
+				なるみや「あ、オーストロシアだ」
+				なるみや「拳劇魔術が盛んなとろこですねー」
+			</message>
+		</sinario>
+		<sinario title="オーストロシア人をふやすぞー" priority="0">
+			<if name="NOW" value="SELECT_CONT_POST" />
+ 	        <if name="TURN" value="20" />
+			<if name="1ST" />
+			<message>
+				%a「我々はまず人を増やすぞー」
+				%a「頭数さえそろえればこっちのものだー」
+			</message>
+		</sinario>
+		<sinario title="オーストロシアそろそろうごくぞー" priority="0">
+			<if name="NOW" value="SELECT_CONT_POST" />
+ 	        <if name="TURN" value="20" />
+			<if name="1ST" />
+			<message>
+				%a「そろそろ動き出そうかな…」
+			</message>
+		</sinario>
+		<sinario title="オーストロシアうごきだすぞー" priority="0">
+ 	        <if name="TURN" value="25" />
+		    <if name="NOW" value="SELECT_CONT_POST" />
+			<if name="1ST" />
+			<selection name="NT" value="0" />
+			<message>
+				%a「じゃぁそろそろ動き出そうかな」
+				オーストロシアはついに行動を開始した。
+			</message>
+		</sinario>
+		<person title="ウィンター将軍" priority="0" img="src/main/config/imgone/002.jpg" />
+		<person title="ナタリー・ヴォルケイノ補佐官" />
+		<person title="カタリー・ヴォルケイノ中将" />
+		<person title="カタリー・ヴォルケイノ少佐" />
+		<person title="リノール・サーン戦死長" />
+		<person title="ルーミートのみなさん" />
+		<person title="ラーミートのみなさん" />
+		<person title="オジービーフ" />
+		<person title="ケジービーフ" />
+		<person title="ウォッカ―" />
+		<person title="ぷーりん" />
+		<person title="ごーちゃん" />
+		<person title="べねちゃん" />
+	</contry>
+	<contry title="エクスカリバー王国" priority="1" gobi="のだ">
+		<sinario title="エクスカリバー初期メッセージ" priority="0">
+			<if name="NOW" value="SELECT_CONT_POST" />
+			<if name="1ST" />
+			<message>
+				なるみや「エクスカリバー王国は剣術を主体に戦う国です。」
+			</message>
+		</sinario>
+		<person title="アージ・ティート" priority="0" />
+		<person title="カンニバル・ラウンド" />
+		<person title="サー・アーサー・チュートリア" />
+		<person title="ブルータス・オーマエ" />
+		<person title="ボーリング" />
+		<person title="ゲゲイディア" />
+		<person title="カールくん" />
+		<person title="紅蓮レット" />
+		<person title="ユーウィン" />
+		<person title="エレクトリック" />
+		<person title="カード・ロイヤル" />
+		<person title="ライク・ホエール" />
+		<person title="ペテルシア" />
+		<person title="トルケミスタン" />
+		<person title="へーベル" />
+		<person title="パロディミウス" />
+		<person title="ディナたん" />
+		<person title="モダンなレッド" />
+	</contry>
+	<location title="えとろーふ" />
+	<location title="くなしー" />
+	<location title="しこたーん" />
+	<location title="せんかーく" />
+	<location title="つーしー" />
+	<location title="とーきょーん" />
+	<location title="とうきょー" />
+	<location title="はばまーぃ" />
+	<location title="ひよし" />
+	<location title="ぷーさん" />
+	<location title="ぺきーん" />
+	<location title="なんきーん" />
+	<location title="アルドネシア" />
+	<location title="エアーズの岩砦" />
+	<location title="エクスカリバー" />
+	<location title="エルフの里" />
+	<location title="スラッシュ" />
+	<location title="スルターナ" />
+	<location title="エンパイヤ">
+		<sinario title="エンパイヤ―" priority="30">
+			<if name="1ST" />
+			<message>
+				なるみや「この土地はエンパイヤ―帝国の首都だったところだよー」
+			</message>
+		</sinario>
+	</location>
+	<location title="メキド" />
+	<location title="キルフィア" />
+	<location title="キャンベルクワ" />
+	<location title="ポーラニア" />
+	<location title="フランツ" />
+	<location title="ソドム" />
+	<location title="ソドムトゴモラ" />
+	<location title="ゴモラ" />
+	<location title="シャーウッドの園" />
+	<location title="ユナイテッド" />
+	<location title="カリフォーニャ" />
+	<location title="ミドルロック" />
+	<location title="ラリーの壁" />
+	<location title="有機カリの森" />
+	<location title="魔術師生家" />
+	<location title="団本陣" />
+	<location title="南部" />
+	<location title="地上海" />
+	<location title="妖精の帝国" />
+	<location title="魔属領" />
+</root>
