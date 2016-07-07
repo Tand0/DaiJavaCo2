@@ -8,7 +8,7 @@
 ## Overview
 ‚¾‚¢‚¶‚á‚Î‚±‚Q‚É‚Â‚¢‚Ä‚ÍˆÈ‰º‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
 
-@see "http://park.ruru.ne.jp/ando/work/DaiJavaCo2/"
+@see "JUnit report include JavaDoc using JavaDoclet technology."
 
 
 Best regards.
